@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Erased Memories wiki</title>
-<meta name="description" content="Вики проекта Erased Memories Койди: персонажи, ссылки и правила.">
+<title>Erased Memories wiki (неофициальная)</title>
+<meta name="description" content="Неофициальная фан-вики проекта Erased Memories Койди: персонажи, ссылки и правила. Создана от скуки @PR0T0GEN.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&family=Lobster&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0d1017;--p1:#141923;--p2:#1b2230;--line:#273044;--tx:#e7eaf2;--mu:#8d97ad;--ac:#ff4f87;--lk:#ff8fb3;--cy:#4fd8ff;--hd:60px}
+:root{--bg:#0d1017;--p1:#141923;--p2:#1b2230;--line:#273044;--tx:#e7eaf2;--mu:#8d97ad;--ac:#ff4f87;--lk:#ff8fb3;--cy:#4fd8ff;--hd:88px}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
@@ -131,6 +131,59 @@ dialog[open]{animation:pop .22s cubic-bezier(.2,.9,.3,1.2)}
 #mp[hidden]{display:none}
 #mp iframe{display:block;border:0;border-radius:8px}
 
+/* вайб 2009-2014 */
+body{background:radial-gradient(1100px 560px at 12% -10%,#2b1034,transparent 60%),radial-gradient(900px 480px at 100% 8%,#0b2c3d,transparent 55%),#0a0d14}
+body::after{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;background:conic-gradient(from 200deg at 30% 20%,transparent 0 20deg,rgba(255,79,135,.1) 40deg,transparent 70deg,rgba(79,216,255,.09) 110deg,transparent 140deg);filter:blur(30px);animation:beams 26s ease-in-out infinite alternate}
+@keyframes beams{to{transform:rotate(14deg) scale(1.15) translateX(4%)}}
+h1,.body h2,.brand,#gate h2,.card b{font-family:Lobster,Unbounded,sans-serif;font-weight:400}
+h1{font-size:clamp(2.4rem,5.2vw,3.4rem);text-shadow:0 2px 0 rgba(0,0,0,.55),0 0 22px rgba(255,79,135,.4)}
+.home h1{font-size:clamp(3rem,9vw,5.4rem);text-shadow:-2px 0 var(--cy),2px 0 var(--ac)}
+.brand{font-size:1.5rem}.body h2{font-size:1.8rem}.card b{font-size:1.15rem}
+.top{display:block;padding:0}
+.top .row{display:flex;align-items:center;gap:16px;height:60px;padding:0 20px}
+.tk{height:28px;overflow:hidden;border-top:1px solid var(--line);background:linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.02));color:var(--mu);font-size:.8rem;line-height:27px;white-space:nowrap}
+#tkd{display:inline-flex;animation:tick 45s linear infinite}
+.tk:hover #tkd{animation-play-state:paused}
+#tkd span{padding-right:80px}
+#tkd a,#gate a:not(.btn),.src a{color:var(--lk)}
+@keyframes tick{to{transform:translateX(-50%)}}
+#nav{background:linear-gradient(rgba(255,255,255,.06),rgba(255,255,255,.02)),rgba(14,18,28,.85)}
+.gh:focus-visible{outline-offset:-2px;border-radius:8px}
+.n:hover{background:rgba(255,255,255,.06)}
+#page{max-width:820px;padding:0 0 34px;background:linear-gradient(rgba(255,255,255,.07),rgba(255,255,255,.015) 120px),rgba(16,21,32,.78);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.22);border-radius:10px;box-shadow:0 18px 50px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.35)}
+#page>*{margin-inline:clamp(18px,3.5vw,38px)}
+#page>.tb{margin:0 0 22px}
+.tb{display:flex;align-items:center;gap:10px;height:34px;padding-left:12px;border-radius:9px 9px 0 0;background:linear-gradient(rgba(255,255,255,.28),rgba(255,255,255,.06) 50%,rgba(0,0,0,.18) 50%,rgba(255,255,255,.04)),rgba(255,79,135,.22);border-bottom:1px solid rgba(255,255,255,.2);font-size:.82rem;text-shadow:0 0 8px #000,0 1px 0 #000}
+.dot{width:10px;height:10px;border-radius:50%;background:#52ff7a;box-shadow:0 0 8px #52ff7a;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35;transform:scale(.8)}}
+.wc{display:flex;gap:1px;height:100%;margin-left:auto;align-items:flex-start}
+.wc u{display:grid;place-items:center;width:30px;height:20px;border:1px solid rgba(255,255,255,.4);border-top:0;border-radius:0 0 4px 4px;background:linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.05) 50%,rgba(0,0,0,.25) 50%,rgba(255,255,255,.08));text-decoration:none;font-size:.8rem;line-height:1}
+.wc u.x{width:44px;background:linear-gradient(#f9a79c,#e0513f 50%,#b31b0d 50%,#d9432c);color:#fff}
+.btn,.mbtn,.search{position:relative;overflow:hidden;background-image:linear-gradient(rgba(255,255,255,.22),rgba(255,255,255,.04) 50%,rgba(0,0,0,.22) 50%,rgba(255,255,255,.05));box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 2px 6px rgba(0,0,0,.4)}
+.btn::after,.mbtn::before{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn:hover::after,.mbtn:hover::before{left:120%}
+.body .card{background-image:linear-gradient(rgba(255,255,255,.08),transparent 45%)}
+.body a:not(.card){text-decoration:none;background:linear-gradient(rgba(255,79,135,.3),rgba(255,79,135,.3)) 0 100%/100% 1px no-repeat;transition:background-size .3s}
+.body a:not(.card):hover{background-size:100% 100%}
+.body h2::after{content:"";display:block;height:2px;margin-top:4px;transform-origin:left;background:linear-gradient(90deg,var(--ac),var(--cy) 60%,transparent);animation:draw .9s .35s cubic-bezier(.2,.7,.2,1) backwards}
+@keyframes draw{from{transform:scaleX(0)}}
+.mbtn[aria-pressed=true]::after{content:"";display:inline-block;width:14px;height:12px;margin-left:8px;vertical-align:-1px;background:linear-gradient(var(--ac),var(--ac)) 0 100%/3px 30%,linear-gradient(var(--ac),var(--ac)) 5px 100%/3px 60%,linear-gradient(var(--ac),var(--ac)) 10px 100%/3px 40%;background-repeat:no-repeat;animation:eq .7s ease-in-out infinite alternate}
+@keyframes eq{to{background-size:3px 90%,3px 25%,3px 75%}}
+.sp{position:fixed;z-index:80;width:10px;height:10px;margin:-5px 0 0 -5px;background:var(--c,#ff4f87);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);pointer-events:none;animation:sp .8s ease-out forwards}
+@keyframes sp{to{transform:translate(var(--dx),var(--dy)) scale(.2) rotate(120deg);opacity:0}}
+.src{margin-top:26px;padding-top:14px;border-top:1px dashed var(--line);color:var(--mu);font-size:.85rem;line-height:1.5}
+#pre{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:#0a0d14;transition:opacity .4s}
+#pre[hidden]{display:none}#pre.out{opacity:0}
+.pw{width:min(420px,88vw);padding-bottom:20px;overflow:hidden;background:rgba(16,21,32,.9);border:1px solid rgba(255,255,255,.25);border-radius:10px;box-shadow:0 18px 50px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.3)}
+.pw .tb{margin:0}
+.pw p,.pw small{display:block;margin:0 20px}
+.pw p{margin-top:18px;margin-bottom:10px}
+.pw small{margin-top:10px;color:var(--mu)}
+.pbar{height:22px;margin:0 20px;padding:2px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.35);border-radius:11px}
+.pbar i{display:block;width:0;height:100%;border-radius:9px;background:linear-gradient(115deg,rgba(255,255,255,.25) 25%,transparent 25% 50%,rgba(255,255,255,.25) 50% 75%,transparent 75%) 0 0/28px 28px,#ff4f87;box-shadow:inset 0 8px 0 rgba(255,255,255,.25);transition:width .1s linear;animation:stripe .5s linear infinite}
+@keyframes stripe{to{background-position:28px 0,0 0}}
+@media(prefers-reduced-motion:reduce){#tkd span+span{display:none}.tk{overflow-x:auto}body::after{display:none}}
+
 @media(max-width:1100px){.app{grid-template-columns:268px minmax(0,1fr)}#toc{display:none}}
 @media(max-width:760px){
 .app{display:block}#burger{display:block}
@@ -145,11 +198,12 @@ body.open #veil{opacity:1;pointer-events:auto}
 </head>
 <body>
 <div id="bar"></div>
-<header class="top">
+<header class="top"><div class="row">
   <button id="burger" type="button" aria-label="Меню">Меню</button>
   <a class="brand" href="#/home" data-t="Erased Memories">Erased Memories</a>
   <button class="mbtn" id="music" type="button" aria-pressed="false">Музыка</button>
-  <button class="search" id="sbtn" type="button" aria-label="Поиск"><span>Поиск по вики</span><kbd>Ctrl K</kbd></button>
+  <button class="search" id="sbtn" type="button" aria-label="Поиск"><span>Поиск по вики</span><kbd>Ctrl K</kbd></button></div>
+  <div class="tk"><div id="tkd"></div></div>
 </header>
 <div class="app">
   <nav id="nav" aria-label="Разделы"><i id="pill"></i><div id="navl"></div></nav>
@@ -158,6 +212,7 @@ body.open #veil{opacity:1;pointer-events:auto}
 </div>
 <div id="veil"></div>
 <div id="mp" hidden></div>
+<div id="pre" hidden><div class="pw"><div class="tb"><i class="dot"></i><span>Erased Memories.swf</span></div><p>Загрузка… <b id="pct">0%</b></p><div class="pbar"><i id="pfill"></i></div><small>Пожалуйста, не закрывайте вкладку.</small></div></div>
 
 <dialog id="q" aria-label="Поиск">
   <input id="qi" type="search" placeholder="Что ищем?" autocomplete="off" aria-label="Поиск">
@@ -167,7 +222,8 @@ body.open #veil{opacity:1;pointer-events:auto}
   <h2 id="gt">Прежде чем зайти</h2>
   <p>В проекте есть арты и темы жестокого характера, мерцающие огни, скримеры, яркие цвета, упоминание наркотиков, тревожные темы и нецензурная лексика. Возраст: 16+.</p>
   <p>Автор против политики, войны, насилия и наркотиков. Всё это существует только внутри проекта.</p>
-  <p>если вам безразлично, залетайте!</p>
+  <p>Это неофициальный фан-сайт, созданный от скуки <a href="https://t.me/PR0T0GEN" target="_blank" rel="noopener">@PR0T0GEN</a>. Проект принадлежит Койди, ссылка на оригинал есть внизу каждой страницы.</p>
+  <p>Если вам всё равно, добро пожаловать.</p>
   <div class="acts"><button class="btn pri" id="enter" type="button">Зайти</button><a class="btn" href="https://neocities.org/">Уйти</a></div>
 </dialog>
 
@@ -179,6 +235,7 @@ const cap=s=>s[0].toUpperCase()+s.slice(1);
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const A=WIKI.base,AS=A+'assets/tumblr_',LOCK=AS+'e8ccafff4f0d223e3c25277e81793b38_444685a0_100.jpg';
 const im=h=>h?AS+h+'_100.jpg':LOCK;
+const SRC='Неофициальный фан-сайт, созданный от скуки <a href="https://t.me/PR0T0GEN" target="_blank" rel="noopener">@PR0T0GEN</a>. Проект принадлежит Койди. Оригинал: <a href="'+A+'" target="_blank" rel="noopener">koidylovesvelial.neocities.org</a>';
 const BTN=`<a href="${A}"><img src="${AS}edc7992b83ceb76ed0d632442fa09fbe_883d94bd_100.jpg" alt="ERASEDMEMORIESbutton.png"></a>`;
 
 /* страницы: обычные + по странице на каждого персонажа */
@@ -186,8 +243,8 @@ const pages=[];
 WIKI.pages.forEach(p=>{
   pages.push(p);
   if(p.id=='cast')WIKI.chars.forEach(([s,h])=>pages.push({id:'c-'+s,t:cap(s),g:'Персонажи',c:[s,h],
-    md:h?`## Описание\n\nПодробное описание ещё не добавлено. Пока полную страницу героя можно посмотреть на [старом сайте](${A+s}.html).`
-        :`## Описание\n\n||Страница закрыта автором. Не хочу спойлеров, отнеситесь с пониманием.||`}));
+    md:h?`## Описание\n\nПодробного описания здесь пока нет. Страницу героя можно посмотреть в [оригинале](${A+s}.html).`
+        :`## Описание\n\n||Автор оригинала закрыл эту страницу, чтобы избежать спойлеров. Спасибо за понимание.||`}));
 });
 
 /* мини-markdown */
@@ -199,7 +256,7 @@ const inl=s=>esc(s)
 const grid=k=>'<div class="grid">'+WIKI.chars.filter(([s,h])=>k=='open'?h:!h).map(([s,h])=>
   `<a class="card${h?'':' lock'}" href="#/c-${s}"><img loading="lazy" alt="" src="${im(h)}"><b>${cap(s)}</b>${h?'':'<small>закрыто</small>'}</a>`).join('')+'</div>';
 const btnbox=()=>`<div class="btnbox"><a href="${A}"><img src="${AS}edc7992b83ceb76ed0d632442fa09fbe_883d94bd_100.jpg" alt="Кнопка Erased Memories"></a><pre><code>${esc(BTN)}</code></pre><button class="btn copy" type="button">Копировать код</button></div>`;
-const info=([s,h])=>`<aside class="info"><img alt="" src="${im(h)}"><dl><dt>Страница</dt><dd>${h?'открыта':'закрыта'}</dd><dt>Старый сайт</dt><dd><a href="${A+s}.html" target="_blank" rel="noopener">${s}.html</a></dd></dl></aside>`;
+const info=([s,h])=>`<aside class="info"><img alt="" src="${im(h)}"><dl><dt>Страница</dt><dd>${h?'открыта':'закрыта'}</dd><dt>Оригинал</dt><dd><a href="${A+s}.html" target="_blank" rel="noopener">${s}.html</a></dd></dl></aside>`;
 const md=src=>src.trim().split(/\n\s*\n/).map(b=>{
   let m;
   if(m=b.match(/^\{\{(cast:open|cast:lock|btn)\}\}$/))return m[1]=='btn'?btnbox():grid(m[1].slice(5));
@@ -217,8 +274,8 @@ const groups=[...new Set(pages.filter(p=>p.g).map(p=>p.g))];
 nav.innerHTML=pages.filter(p=>!p.g).map(link).join('')+groups.map(g=>
   `<div class="grp"><button class="gh" type="button" aria-expanded="false">${g}</button><div class="gb"><div>${pages.filter(p=>p.g==g).map(link).join('')}</div></div></div>`).join('');
 $$('.n').forEach((a,i)=>a.style.setProperty('--i',Math.min(i,14)));
-function place(){const a=$('.n.on');if(!a){pill.style.opacity=0;return}pill.style.opacity=1;pill.style.height=a.offsetHeight+'px';pill.style.transform=`translateY(${a.offsetTop}px)`}
-nav.addEventListener('click',e=>{const b=e.target.closest('.gh');if(!b)return;const g=b.parentNode;g.classList.toggle('open');b.setAttribute('aria-expanded',g.classList.contains('open'));setTimeout(place,330)});
+function place(){const a=$('.n.on');if(!a){pill.style.opacity=0;return}const g=a.closest('.grp'),t=g&&!g.classList.contains('open')?$('.gh',g):a;pill.style.opacity=1;pill.style.height=t.offsetHeight+'px';pill.style.transform=`translateY(${t.offsetTop}px)`}
+nav.addEventListener('click',e=>{const b=e.target.closest('.gh');if(!b)return;const g=b.parentNode;g.classList.toggle('open');b.setAttribute('aria-expanded',g.classList.contains('open'));place();setTimeout(place,330)});
 
 /* заголовок: буквы «собираются» из шума */
 let sid=0;
@@ -246,7 +303,7 @@ function route(){
   const g=$('.n.on')?.closest('.grp');
   if(g){g.classList.add('open');$('.gh',g).setAttribute('aria-expanded','true')}
   const pv=pages[i-1],nx=pages[i+1];
-  page.innerHTML=`<nav class="bc"><a href="#/home">Главная</a>${p.g?`<span>/</span><span>${p.g}</span>`:''}${i?`<span>/</span><span>${p.t}</span>`:''}</nav><h1></h1>${i?'':`<p class="meta">ОФИЦИАЛЬНЫЙ САЙТ КОЙДИ (${WIKI.ver})!!!</p>`}<div class="body">${p.c?info(p.c):''}${md(p.md)}</div><div class="pager">${pv?`<a href="#/${pv.id}"><small>Назад</small>${pv.t}</a>`:'<span></span>'}${nx?`<a href="#/${nx.id}"><small>Дальше</small>${nx.t}</a>`:'<span></span>'}</div>`;
+  page.innerHTML=`<div class="tb" aria-hidden="true"><i class="dot"></i><span>${i?p.t:WIKI.name}.exe — Erased Memories Wiki</span><b class="wc"><u>_</u><u>□</u><u class="x">×</u></b></div><nav class="bc"><a href="#/home">Главная</a>${p.g?`<span>/</span><span>${p.g}</span>`:''}${i?`<span>/</span><span>${p.t}</span>`:''}</nav><h1></h1>${i?'':`<p class="meta">Неофициальный фан-сайт. Версия оригинала: ${WIKI.ver}</p>`}<div class="body">${p.c?info(p.c):''}${md(p.md)}</div><div class="pager">${pv?`<a href="#/${pv.id}"><small>Назад</small>${pv.t}</a>`:'<span></span>'}${nx?`<a href="#/${nx.id}"><small>Дальше</small>${nx.t}</a>`:'<span></span>'}</div><p class="src">${SRC}</p>`;
   scramble($('h1',page),i?p.t:WIKI.name);
   $$('.bc,h1,.meta,.body>*,.pager',page).forEach((e,k)=>{e.classList.add('a');e.style.setProperty('--i',Math.min(k,12))});
   scrollTo({top:0,behavior:'instant'});
@@ -322,7 +379,9 @@ q.addEventListener('click',e=>{if(e.target==q)q.close()});
 
 /* предупреждение при первом входе */
 let ok;try{ok=sessionStorage.getItem('em-ok')}catch(e){}
-if(!ok)gate.showModal();
+const pre=$('#pre');
+if(ok||RM){pre.remove();if(!ok)gate.showModal()}
+else{pre.hidden=false;let n=0;const t=setInterval(()=>{n=Math.min(100,n+1+Math.random()*9|0);$('#pct').textContent=n+'%';$('#pfill').style.width=n+'%';if(n>=100){clearInterval(t);setTimeout(()=>{pre.classList.add('out');setTimeout(()=>{pre.remove();gate.showModal()},400)},250)}},100)}
 gate.addEventListener('cancel',e=>e.preventDefault());
 $('#enter').onclick=()=>{gate.close();try{sessionStorage.setItem('em-ok','1')}catch(e){}};
 
@@ -334,6 +393,12 @@ mb.onclick=()=>{
   else{mp.innerHTML='<iframe width="260" height="146" title="Фоновая музыка" src="https://www.youtube.com/embed/Q4bG6wewZdM?autoplay=1&loop=1&playlist=Q4bG6wewZdM" allow="autoplay; encrypted-media"></iframe><div>Плейлист: ArpWire TV</div>';mp.hidden=false}
   mb.setAttribute('aria-pressed',String(!on));
 };
+
+/* бегущая строка с указанием источника */
+$('#tkd').innerHTML=`<span>${SRC}</span><span inert aria-hidden="true">${SRC}</span>`;
+
+/* искры за курсором */
+if(!RM&&matchMedia('(pointer:fine)').matches){let t=0;addEventListener('pointermove',e=>{const n=performance.now();if(n-t<45)return;t=n;const s=document.createElement('i');s.className='sp';s.style.cssText=`left:${e.clientX}px;top:${e.clientY}px;--dx:${(Math.random()-.5)*34}px;--dy:${14+Math.random()*22}px;--c:${Math.random()<.5?'#ff4f87':'#4fd8ff'}`;document.body.appendChild(s);setTimeout(()=>s.remove(),800)})}
 
 route();
 </script>

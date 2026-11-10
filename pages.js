@@ -2,12 +2,11 @@
    {id:'адрес', t:'Заголовок', g:'Раздел в меню', md:`текст`}
    Разметка: ## заголовок, ### подзаголовок, - список, [текст](ссылка), ![подпись](картинка),
    **жирный**, > заметка, ||скрытый текст (спойлер)||.
-   Несколько картинок подряд (каждая с новой строки) складываются в галерею.
    Персонажи: ['имя-страницы', 'код картинки'] — без кода картинки персонаж считается закрытым. */
 const ASSET = 'https://koidylovesvelial.neocities.org/assets/';
 const WIKI = {
   name: 'Erased Memories',
-  ver: 'ALPHA V1.0.2',
+  ver: 'alpha v1.0.2',
   base: 'https://koidylovesvelial.neocities.org/',
   chars: [
     ['koidy', '7215ac24cc260b120391c0005a227f1b_bb02f1b5'], ['ter'],
@@ -26,11 +25,9 @@ const WIKI = {
   ],
   pages: [
     { id: 'home', t: 'Главная', g: '', md: `
-или официальный сайт Erased Memories
+> Это **неофициальная** вики, созданная от скуки [@PR0T0GEN](https://t.me/PR0T0GEN). Проект принадлежит Койди, создатель вики им не владеет. Официальный сайт: [koidylovesvelial.neocities.org](https://koidylovesvelial.neocities.org/).
 
-да, наверное!
-
-ага, добро пожаловать!
+Erased Memories — анимационный проект Койди, в котором простые образы передают ужас ужасный. Добро пожаловать!
 
 ![Анимация из проекта Erased Memories](${ASSET}tumblr_41a544da0c813b4abc61495ea3db4ca6_d2ba3e64_1280%20%281%29.gif)
 
@@ -38,10 +35,9 @@ const WIKI = {
 
 - [О проекте](#/about): идея, жанр и время действия
 - [Персонажи](#/cast): кто есть кто, часть страниц закрыта
-- [Ссылки](#/links): где найти Койди, гостевая книга
+- [Ссылки](#/links): где найти Койди и гостевая книга
 - [Правила и предупреждения](#/rules): о чём стоит знать до просмотра
-- [Ещё](#/more): Вася, кнопка сайта, крутые сайты и загадки
-- [Галерея](#/gallery): все гифки с сайта
+- [Ещё](#/more): Вася, друзья проекта, крутые сайты и загадки
 
 ## Как здесь всё устроено
 
@@ -50,45 +46,53 @@ const WIKI = {
     { id: 'about', t: 'О проекте', g: 'Проект', md: `
 ![Erased Memories](${ASSET}tumblr_8a6b743803c33b5565caa2e0c5b89fd0_223c9fb6_540%20%281%29.jpg)
 
-Erased Memories - мой анимационный проект, цель которого заключается в том, чтобы через простые образы передать ужас ужасный. анимация выполнена в простом стиле, однако события, разворачивающиеся в ней, немного тревожат, должны по крайней мере, наверное. а вообще я этот сайт по приколу создал.
+Erased Memories — анимационный проект Койди. Через простые образы он хочет передать ужас ужасный. Анимация выполнена в простом стиле, однако события в ней немного тревожат, по крайней мере должны.
 
 ## Жанр
 
-с 2021 года я занимаюсь своим проектом, который включает в себя элементы гуро и боевика (грубо говоря). в нем также присутствуют всякие мемы и комические моменты.
+С 2021 года Койди работает над проектом, в котором есть элементы гуро и боевика, а также мемы и комичные моменты.
 
 ## Время действия
 
-события в проекте разворачиваются с 2009 по 2014 год, в период экономических трудностей, когда подростки проявляли особую жестокость, а технологии были далеки от современных.
+События разворачиваются с 2009 по 2014 год, в период экономических трудностей, когда подростки проявляли особую жестокость, а технологии были далеки от современных.
 
 ## Состояние проекта
 
-пока что я рисовал только арты, а к анимации только приступил.
+Пока что нарисованы только арты, к анимации автор только приступил.
+
+## Источник
+
+Вся информация взята с [официального сайта](https://koidylovesvelial.neocities.org/). Права на проект принадлежат Койди.
 ` },
     { id: 'rules', t: 'Правила и предупреждения', g: 'Проект', md: `
 ## Перед просмотром
 
-привет! я вам настоятельно НЕ РЕКОМЕНДУЮ заходить на этот сайт с мобильного устройства: не все страницы будут найдены, и многие страницы будут смотреться очень некрасиво. РЕКОМЕНДУЮ заходить с ПК.
+Автор оригинального сайта не рекомендует открывать его с телефона: часть страниц не найдётся, а многие выглядят неаккуратно. Лучше заходить с компьютера.
 
-> Это сказано про старые страницы на Neocities. Сама вики подстроена и под телефон.
+> Это относится к старым страницам на Neocities. Эта вики подстроена и под мобильные экраны.
 
-## Здесь присутствуют
+## Что здесь есть
 
-- арты/темы жестокого характера, мерцающие огни, скримеры, яркие цвета, упоминание наркотиков, тревожные темы, нецензурная лексика.
+Арты и темы жестокого характера, мерцающие огни, скримеры, яркие цвета, упоминания наркотиков, тревожные темы и нецензурная лексика. Возрастное ограничение: 16+.
 
 ## Важно понимать
 
-мы не одобряем политику, войну, жестокое обращение с другими людьми (включая убийства и физическое насилие), и категорически против употребления наркотических веществ – мы считаем это неприемлемым, и все это будет находиться лишь в рамках проекта.
+Авторы проекта не одобряют политику, войну и жестокое обращение с людьми, включая убийства и физическое насилие. Они категорически против употребления наркотиков: это неприемлемо, и всё подобное существует только в рамках проекта.
 
-также, помните, что все элементы связанные с проектом нарочно сделанны небрежно, поэтому не стоит предъявлять претензии или жалобы нашей команде по поводу их качества.
+Все элементы проекта нарочно сделаны небрежно, поэтому претензии к их качеству не принимаются.
 
-для того чтобы расмотреть изображение с исходными размерами, откройте изображение в новой вкладке (перетащите вверх к другим вкладкам).
+Чтобы рассмотреть изображение в исходном размере, откройте его в новой вкладке.
 
-по вопросам, предложениям и при обнаружении ошибок пишите в [гостевую книгу](https://koidylovesvelial.atabook.org/), оставив свою почту, чтобы я смог ответить вам лично.
+## Обратная связь
 
-16+. (плейлист на фоне пренадлежит ArpWire TV)
+Вопросы, предложения и найденные ошибки пишите в [гостевую книгу](https://koidylovesvelial.atabook.org/) оригинального сайта, оставив почту: автор ответит лично.
+
+## Музыка
+
+Плейлист на фоне принадлежит ArpWire TV.
 ` },
     { id: 'cast', t: 'Все персонажи', g: 'Персонажи', md: `
-ПЕРСОНАЖИ НА ДАННЫЙ МОМЕНТ (следующие картинки нажимаются! :Ъ)(многие из них заблокированы, поскольку я не хочу спойлеров, отнеситесь к этому с пониманием, пожалуйста.)
+Нажмите на карточку, чтобы открыть страницу героя. Многие страницы закрыты: автор не хочет спойлеров, пожалуйста, отнеситесь к этому с пониманием.
 
 ## Открытые страницы
 
@@ -99,37 +103,25 @@ Erased Memories - мой анимационный проект, цель кот�
 {{cast:lock}}
 ` },
     { id: 'links', t: 'Где найти Койди', g: 'Ссылки', md: `
-## Соцсети
-
-ага, добро пожаловать! (следующие картинки нажимаются!)
-
-[![Telegram](https://i.pinimg.com/736x/e7/78/17/e77817bd1dbfcf6d27585dadbd0da528.jpg)](https://t.me/Erased_Memories_official)
-[![SpaceHey](${ASSET}tumblr_bb69d96b1e0420ba472e7f437c0b6fc4_856de36c_400.png)](https://spacehey.com/koidylovesvelial)
-[![YouTube](${ASSET}tumblr_95607cfacaae11e93af3724aa7aff906_4e115e8b_400.png)](https://www.youtube.com/@Koidy)
-[![DonationAlerts](https://png.klev.club/uploads/posts/2024-05/png-klev-club-xd4p-p-donationalerts-png-4.png)](https://dalink.to/erased_memories)
-[![Newgrounds](https://upload.wikimedia.org/wikipedia/fi/8/87/Newgrounds-logo.png)](https://koidyofficial.newgrounds.com/)
-[![Steam](${ASSET}tumblr_088feba4283ad5df48d1e45c7c4a2d23_9970961a_100.webp)](https://steamcommunity.com/profiles/76561199488716258)
+## Официальные страницы Койди
 
 - [Telegram](https://t.me/Erased_Memories_official)
-- [SpaceHey](https://spacehey.com/koidylovesvelial)
 - [YouTube](https://www.youtube.com/@Koidy)
-- [DonationAlerts](https://dalink.to/erased_memories)
+- [SpaceHey](https://spacehey.com/koidylovesvelial)
 - [Newgrounds](https://koidyofficial.newgrounds.com/)
 - [Steam](https://steamcommunity.com/profiles/76561199488716258)
+- [DonationAlerts](https://dalink.to/erased_memories): поддержать проект
 
 ## Гостевая книга
 
-и не забудьте подписать ГоСтЕвУю КнИгУ (картинка нажимается!)!→[![Гостевая книга](${ASSET}tumblr_ddfa33f2d64b9f9d9f6dd13b259e120e_d892461f_100.gif)](https://koidylovesvelial.atabook.org/)←
+Не забудьте оставить запись в [гостевой книге](https://koidylovesvelial.atabook.org/) оригинального сайта. Вопросы, предложения и найденные ошибки пишите туда и указывайте почту: автор ответит лично.
 
-по вопросам, предложениям и при обнаружении ошибок пишите в гостевую книгу, оставив свою почту, чтобы я смог ответить вам лично.
+## Об этой вики
+
+Неофициальный фан-сайт создан от скуки [@PR0T0GEN](https://t.me/PR0T0GEN). Проект принадлежит Койди, создатель вики им не владеет.
 ` },
     { id: 'more', t: 'Ещё', g: 'Ссылки', md: `
-## Другое
-
-ДРУГОЕ (следующие картинки нажимаются!):
-
-[![Дополнительно](${ASSET}tumblr_aae46a61d64d13aa35e28fac9d73a92c_25a117b6_100.gif)](https://koidylovesvelial.neocities.org/dopolnitelno.html)
-[![Старый архив](${ASSET}tumblr_a7615491c79cac26d15c6732629c8e9e_d4952872_100.gif)](https://koidylovesvelial.neocities.org/oldarchive.html)
+## Старый сайт
 
 - [Дополнительно](https://koidylovesvelial.neocities.org/dopolnitelno.html)
 - [Старый архив](https://koidylovesvelial.neocities.org/oldarchive.html)
@@ -138,33 +130,27 @@ Erased Memories - мой анимационный проект, цель кот�
 
 ![Вася](${ASSET}tumblr_26943f8be84c21f6ba9f26eafb475894_9ca6a220_400.jpg)
 
-а это Вася
+А это Вася.
 
-![Вася, гифка](${ASSET}tumblr_d7bf225e3dd053fafd16e30f3fd6899f_7211d9f9_1280.gif)
+## Друзья проекта
 
-## Помогают с проектом
+- [Велиал](https://velialloveskoidy.neocities.org/): помогает с проектом
 
-(нажимаются только никнеймы.)
+## Кнопка оригинального сайта
 
-- [Велиал](https://velialloveskoidy.neocities.org/) ![Велиал](${ASSET}tumblr_db61c6634f828abaa91c88994fac8f5c_3eeed2cc_100.jpg)
-
-## Кнопка сайта
-
-наша кнопка сайта! вы можете ее добавить себе на сайт.
+Эту кнопку можно добавить на свой сайт.
 
 {{btn}}
 
 ## Крутые сайты
 
-КРУТЫЕ САЙТЫ!:
-
-[![Dizzt’s Shoal](https://dizzt3942.neocities.org/assets/icon/dizztsshoal.gif)](https://dizzt3942.neocities.org/)
-[![Ichomancer](https://ichomancer.com/ichobutton.gif)](https://ichomancer.com/)
-[![Cosmic Club](https://cosmic-seea.neocities.org/CosmicClubButton.gif)](https://cosmic-seea.neocities.org/CosmicClub)
-[![Cosmic-S](https://cosmic-seea.neocities.org/button.gif)](https://cosmic-seea.neocities.org/)
-[![Perhaptation’s Stargazers](https://perstar.neocities.org/perstarbutton.png)](https://perstar.neocities.org/)
-[![My Nekos’ World](https://mynekosworld.pages.dev/static/img/button/scroll3.gif)](https://mynekosworld.neocities.org/)
-[![Cache of Curiosities](https://sybernetics.net/images/myButtons/sybersbutton1.gif)](https://sybernetics.net/)
+- [Dizzt’s Shoal](https://dizzt3942.neocities.org/)
+- [Ichomancer](https://ichomancer.com/)
+- [Cosmic Club](https://cosmic-seea.neocities.org/CosmicClub)
+- [Cosmic-S](https://cosmic-seea.neocities.org/)
+- [Perhaptation’s Stargazers](https://perstar.neocities.org/)
+- [My Nekos’ World](https://mynekosworld.neocities.org/)
+- [Cache of Curiosities](https://sybernetics.net/)
 
 ## ???
 
@@ -173,39 +159,6 @@ Erased Memories - мой анимационный проект, цель кот�
 - ||[Загадка 3](https://koidylovesvelial.neocities.org/zagadka3.html)||
 - ||[Загадка 4](https://koidylovesvelial.neocities.org/zagadka4.html)||
 - ||[whatagain.html](https://koidylovesvelial.neocities.org/whatagain.html)||
-` },
-    { id: 'gallery', t: 'Галерея :Ъ', g: 'Ссылки', md: `
-## Гифки с сайта
-
-![](${ASSET}tumblr_5306e2651fbcb88fb08d59f8724ce476_49820a13_250%20%281%29.gif)
-![](${ASSET}tumblr_e21072d6c2bc1bba01fac15f3795ca57_f7a7a4f2_250.gif)
-![](${ASSET}tumblr_d1f55f45d30bd8e43b22f54a1ccbb884_550cd507_1280.gif)
-![](https://media.tenor.com/CRNJPc-JMqQAAAAi/worried-stan-marsh.gif)
-![](https://i.pinimg.com/originals/be/7d/75/be7d7560f5480d63ba46df95d8aea5e9.gif)
-
-## :Ъ
-
-![](${ASSET}tumblr_b1558ab3b84004a89251d50eec05ea2e_996b612f_100.gif)
-![](https://i.pinimg.com/474x/2c/46/65/2c4665852509bcbfb38b587118a1114b.jpg)
-![](${ASSET}tumblr_81478eb9ffb9781c73ccee76eaa24c1d_e12919a0_250.gif)
-![](https://i.postimg.cc/g2gQYYBj/97.gif)
-![](https://i.pinimg.com/736x/98/2f/f7/982ff7ce806030e51f3b138f49488cc6.jpg)
-![](${ASSET}tumblr_prnpmyHjy81xzybrpo6_100%20%281%29.gif)
-![](${ASSET}tumblr_9bd10d5eea844f81d929016bc16fa6c1_dfec5b1a_100.gif)
-![](${ASSET}tumblr_4f20cb676fa880c612d1070f3d588d6f_0b09c7e5_100.gif)
-![](${ASSET}tumblr_fcb5d5988df957570c2e828fac5f607d_c5b42610_100.gif)
-![](${ASSET}tumblr_0422f74c6374c5ddc2cf98d0b2e83199_2c3fe91e_100.gif)
-![](${ASSET}tumblr_c5f94ea2bc93811510286081880ef55a_435d8853_100.gif)
-![](https://beon.vip/uploads_image/f8/af/f8afaa7e576b8805500cdb007cef17a3.png)
-![](${ASSET}032.webp)
-![](${ASSET}dGcLBz2.gif)
-![](${ASSET}o3gt1eA.gif)
-
-## Секретные гифки
-
-[![](${ASSET}tumblr_afddc594d9f7311837e2d8c9656522aa_be24b174_75.gif)](https://koidylovesvelial.neocities.org/zagadka2.html)
-[![](${ASSET}tumblr_59ff99cd4774966b7f891b59f112b09e_6e13628b_75.gif)](https://koidylovesvelial.neocities.org/zagadka3.html)
-[![](${ASSET}tumblr_c521134816eb0aaf03355484fb45529d_bc49f11f_400.gif)](https://koidylovesvelial.neocities.org/zagadka4.html)
 ` }
   ]
 };
