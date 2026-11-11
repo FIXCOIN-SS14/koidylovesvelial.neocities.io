@@ -37,7 +37,7 @@ Erased Memories — анимационный проект Койди, в кот�
 - [Персонажи](#/cast): кто есть кто, часть страниц закрыта
 - [Ссылки](#/links): где найти Койди и гостевая книга
 - [Правила и предупреждения](#/rules): о чём стоит знать до просмотра
-- [Ещё](#/more): Вася, друзья проекта, крутые сайты и загадки
+- [Ещё](#/more): Вася, друзья проекта и загадки
 
 ## Как здесь всё устроено
 
@@ -141,16 +141,6 @@ Erased Memories — анимационный проект Койди. Через
 Эту кнопку можно добавить на свой сайт.
 
 {{btn}}
-
-## Крутые сайты
-
-- [Dizzt’s Shoal](https://dizzt3942.neocities.org/)
-- [Ichomancer](https://ichomancer.com/)
-- [Cosmic Club](https://cosmic-seea.neocities.org/CosmicClub)
-- [Cosmic-S](https://cosmic-seea.neocities.org/)
-- [Perhaptation’s Stargazers](https://perstar.neocities.org/)
-- [My Nekos’ World](https://mynekosworld.neocities.org/)
-- [Cache of Curiosities](https://sybernetics.net/)
 
 ## ???
 
