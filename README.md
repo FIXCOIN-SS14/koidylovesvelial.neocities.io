@@ -1,1 +1,3 @@
-Your site is live at https://fixcoin-ss14.github.io/koidylovesvelial.neocities.io/
+ЭТО ФАН ВИКИ И НЕ ПРЕТЕНДУЕТ НЕ НА ЧТО!!!
+
+ОНА СОЗДАННА ПО ПРИКОЛУ!! Разуметься с разрешения автора оригинальной вики "koidylovesvelial.neocities.org".
