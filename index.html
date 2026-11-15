@@ -123,7 +123,7 @@ dialog[open]{animation:pop .22s cubic-bezier(.2,.9,.3,1.2)}
 .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,79,135,.25)}
 #veil{display:none}
 .gal{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
-.gal img{display:block;max-height:110px;max-width:100%;width:auto;border-radius:8px}
+.gal img{display:block;max-height:240px;max-width:100%;width:auto;border-radius:8px}
 .body li img{height:40px;width:auto;margin-left:8px;vertical-align:middle;border-radius:6px}
 .mbtn{padding:8px 12px;background:var(--p1);border:1px solid var(--line);border-radius:10px;color:var(--tx);font:inherit;font-size:.92rem;cursor:pointer;transition:border-color .2s,color .2s}
 .mbtn:hover,.mbtn[aria-pressed=true]{border-color:var(--ac);color:var(--lk)}
@@ -227,11 +227,12 @@ body.open #veil{opacity:1;pointer-events:auto}
   <div class="acts"><button class="btn pri" id="enter" type="button">Зайти</button><a class="btn" href="https://neocities.org/">Уйти</a></div>
 </dialog>
 
-<script src="pages.js?v=3"></script>
+<script src="pages.js?v=4"></script>
 <script>
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const cap=s=>s[0].toUpperCase()+s.slice(1);
+const nm=s=>((WIKI.bio||{})[s]||{}).name||cap(s);
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const A=WIKI.base,AS=A+'assets/tumblr_',LOCK=AS+'e8ccafff4f0d223e3c25277e81793b38_444685a0_100.jpg';
 const im=h=>h?AS+h+'_100.jpg':LOCK;
@@ -242,8 +243,8 @@ const BTN=`<a href="${A}"><img src="${AS}edc7992b83ceb76ed0d632442fa09fbe_883d94
 const pages=[];
 WIKI.pages.forEach(p=>{
   pages.push(p);
-  if(p.id=='cast')WIKI.chars.forEach(([s,h])=>pages.push({id:'c-'+s,t:cap(s),g:'Персонажи',c:[s,h],
-    md:h?`## Описание\n\nПодробного описания здесь пока нет. Страницу героя можно посмотреть в [оригинале](${A+s}.html).`
+  if(p.id=='cast')WIKI.chars.forEach(([s,h])=>pages.push({id:'c-'+s,t:nm(s),g:'Персонажи',c:[s,h],
+    md:(WIKI.bio||{})[s]?WIKI.bio[s].md:h?`## Описание\n\nПодробного описания здесь пока нет. Страницу героя можно посмотреть в [оригинале](${A+s}.html).`
         :`## Описание\n\n||Автор оригинала закрыл эту страницу, чтобы избежать спойлеров. Спасибо за понимание.||`}));
 });
 
@@ -254,9 +255,9 @@ const inl=s=>esc(s)
   .replace(/\*\*(.+?)\*\*/g,'<b>$1</b>')
   .replace(/\|\|(.+?)\|\|/g,'<span class="redact" tabindex="0" role="button" title="Нажмите, чтобы показать">$1</span>');
 const grid=k=>'<div class="grid">'+WIKI.chars.filter(([s,h])=>k=='open'?h:!h).map(([s,h])=>
-  `<a class="card${h?'':' lock'}" href="#/c-${s}"><img loading="lazy" alt="" src="${im(h)}"><b>${cap(s)}</b>${h?'':'<small>закрыто</small>'}</a>`).join('')+'</div>';
+  `<a class="card${h?'':' lock'}" href="#/c-${s}"><img loading="lazy" alt="" src="${im(h)}"><b>${nm(s)}</b>${h?'':'<small>закрыто</small>'}</a>`).join('')+'</div>';
 const btnbox=()=>`<div class="btnbox"><a href="${A}"><img src="${AS}edc7992b83ceb76ed0d632442fa09fbe_883d94bd_100.jpg" alt="Кнопка Erased Memories"></a><pre><code>${esc(BTN)}</code></pre><button class="btn copy" type="button">Копировать код</button></div>`;
-const info=([s,h])=>`<aside class="info"><img alt="" src="${im(h)}"><dl><dt>Страница</dt><dd>${h?'открыта':'закрыта'}</dd><dt>Оригинал</dt><dd><a href="${A+s}.html" target="_blank" rel="noopener">${s}.html</a></dd></dl></aside>`;
+const info=([s,h])=>`<aside class="info"><img alt="" src="${im(h)}"><dl>${(((WIKI.bio||{})[s]||{}).rows||[]).map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}<dt>Оригинал</dt><dd><a href="${A+s}.html" target="_blank" rel="noopener">${s}.html</a></dd></dl></aside>`;
 const md=src=>src.trim().split(/\n\s*\n/).map(b=>{
   let m;
   if(m=b.match(/^\{\{(cast:open|cast:lock|btn)\}\}$/))return m[1]=='btn'?btnbox():grid(m[1].slice(5));
